@@ -1,0 +1,25 @@
+1. npx tailwindcss init
+
+2. bikin folder instalan kaya : 
+
+a. build :
+a.1 img
+a.2 index.html
+
+b. src :
+b.1 input.css
+
+3. masukkan directory kita ke tailwind.config
+
+4. npm init -y => akan menghasilkan package.json
+4.a tambahkan didalam scripts dg mengubah "text" menjadi, "tailwind" : "npx tailwindcss -i ./src/input.css -o ./build/css/style.css --watch"
+
+5. instal development dependence dg : npm i -D prettier-plugin-tailwindcss => akan menghasilkan nodemoduse dan package-lock.json
+
+6.bikin .gitignore dan masukkan node_modules kedalamnya agar tidak terikut saat upload ke github
+
+7. tambahkn pada package di scripts, dibawah "tailwind", "prettier" : npx prettier --write **/*.html
+
+8. npm run tailwind => menghasilkan folder css
+
+9. isi html dengan dimulai dari body 
